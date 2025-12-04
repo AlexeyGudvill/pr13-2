@@ -1,7 +1,14 @@
-def test_add(): assert 2 + 2 == 4
+import pytest
+from file import add, subtract, multiply, divide
 
-def test_multiply(): assert 2 * 2 == 4
+def test_add():
+    assert add(3, 5) == 7
 
-def test_subtract(): assert 2 - 2 == 0
+def test_subtract():
+    assert subtract(10, 4) == 6
 
-def test_division(): assert 2 / 2 == 1.0
+def test_multiply():
+    assert multiply(2, 3) == 6
+
+def test_divide():
+    assert divide(10, 2) == 5

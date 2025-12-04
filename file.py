@@ -1,15 +1,13 @@
 def add(a, b):
-    print("Функция сложения")
     return a + b
 
-def multiply(a, b):
-    print("Функция умножения")
-    return a * b
-
 def subtract(a, b):
-    print("Функция вычитания")
     return a - b
 
-def division(a, b):
-    print("Функция деления")
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if b == 0:
+        raise ValueError("Деление на ноль недопустимо")
     return a / b
